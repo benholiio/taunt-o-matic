@@ -17,7 +17,9 @@ $(document).ready(function(){ //put everything here:
 		 }
 		
 		});	
-	
+	$('.form').submit(function(){
+		event.preventDefault();
+	});
 	function updateWell(value)
 	{
 		type = "get";
