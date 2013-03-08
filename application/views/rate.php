@@ -33,7 +33,7 @@
   		</table>
   		
   		<script>
-	  		var url = "<?php echo base_url();?>",
+	  		var url = "http://192.168.1.101/tauntaun/",
 			method = "verb";
   		</script>
 	  </div>
