@@ -1,25 +1,36 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Taunt-o-Matic&trade;</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet" media="screen">
     
   </head>
-  <body>  <div class="row-fluid">
+  <body>
+    <!-- Main Row -->
+    <div class="row-fluid">
   
     <div class="span4 offset4">
-      <form action="tauntaun/rate" method="post" accept-charset="utf-8" class="form">        <div class="control-group ">
-          <label class="control-label" for="inputSuccess">Chuck us a third person singular simple verb. e.g. "shoot" </label>
+
+      <img class="taunt-logo" src="img/Logo.png" width="315" height="180" alt="Taunt-o-Matic">
+
+      <p class="about-blurb">Taunt-o-Matic&trade; is THE worlds number 1 customizable taunt-generating API.</p>
+
+      <!-- Form -->
+      <form action="tauntaun/rate" method="post" accept-charset="utf-8" class="form mainform">        
+
+        <div class="control-group ">
+          
           <div class="controls">
-            <input type="text" id="verb" class="input-large">
-            
+            <input type="text" id="verb" class="input-large word-input-box" placeholder="third person singular simple verb. e.g. 'shoot'">
           </div>
+<!--           <label class="control-label" for="inputSuccess">Chuck us a third person singular simple verb. e.g. "shoot" </label> -->
         </div>
+
       </form>     
+
       <div class="well">
         <p>Start typing a verb</p>
     </div>
@@ -41,11 +52,19 @@
         var url = "tauntaun/",
       method = "verb";
       </script>
-    </div>
-    
-  </div>     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="tauntaun/js/jquery-1.7.1.min.js"><\/script>')</script>
-    <script language="JavaScript" type="text/javascript" src="tauntaun/js/bootstrap.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="tauntaun/js/script.js"></script>
+
+
+
+      <!--    Mutant Link   -->
+      <a class="ml-stamp" href="http://www.mutantlabs.com" target="_blank"><img src="img/mutantlabs-free-range-logo.png" width="96" height="95" alt="Mutant Labs - 100% Free Range" /></a>
+
+
+    </div><!--  End Span 4 -->
+  </div> <!-- End Main Row --> 
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="tauntaun/js/jquery-1.7.1.min.js"><\/script>')</script>
+  <script language="JavaScript" type="text/javascript" src="tauntaun/js/bootstrap.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="tauntaun/js/script.js"></script>
    
 </html>
