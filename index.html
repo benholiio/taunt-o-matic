@@ -1,68 +1,51 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Taunt-o-matic by mutantlabs</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/mutantlabs/taunt-o-matic">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Taunt-o-matic</h1>
-            <h2>A taunt generator for noble folk</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/mutantlabs/taunt-o-matic/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/mutantlabs/taunt-o-matic/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>taunt-o-matic</h1>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/mutantlabs">mutantlabs</a> can be found on <a href="https://github.com/mutantlabs/taunt-o-matic">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" media="screen">
     
-  </body>
+  </head>
+  <body>  <div class="row-fluid">
+  
+    <div class="span4 offset4">
+      <form action="tauntaun/rate" method="post" accept-charset="utf-8" class="form">        <div class="control-group ">
+          <label class="control-label" for="inputSuccess">Chuck us a third person singular simple verb. e.g. "shoot" </label>
+          <div class="controls">
+            <input type="text" id="verb" class="input-large">
+            
+          </div>
+        </div>
+      </form>     
+      <div class="well">
+        <p>Start typing a verb</p>
+    </div>
+      
+      <table class="table">
+        <tr>
+          <th>Suffix</th>
+          <th>Rank</th>
+          <th>Vote</th>       
+        </tr>
+        <tr>
+          <td class="suffix"></td>
+          <td class="rank"></td>
+          <td class="vote"><i class="icon-thumbs-up"></i>/<i class="icon-thumbs-down"></i></td>
+        </tr>
+      </table>
+      
+      <script>
+        var url = "tauntaun/",
+      method = "verb";
+      </script>
+    </div>
+    
+  </div>     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="tauntaun/js/jquery-1.7.1.min.js"><\/script>')</script>
+    <script language="JavaScript" type="text/javascript" src="tauntaun/js/bootstrap.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="tauntaun/js/script.js"></script>
+   
 </html>
